@@ -1435,8 +1435,9 @@ ol {
 .related-product .section-title {
 	margin-bottom: 60px;
 }
-*---------------------
-Cart Page
+
+/*---------------------
+		Cart Page
 -----------------------*/
 
 .page-add.cart-page-add {
@@ -1555,7 +1556,7 @@ Cart Page
 	padding: 50px 0;
 }
 
-	.cart-btn .coupon-input {
+	.cart-btn.coupon-input {
 		padding-left: 35px;
 	}
 
@@ -1601,12 +1602,14 @@ Cart Page
 			}
 
 	.cart-btn .site-btn.clear-btn {
-		color: #4a4a4a;
-		border-color: #D0D7DB;
+		color: #a084ad;
+		border-color: #4c3c55;
 		margin-right: 5px;
 	}
 
 	.cart-btn .site-btn.update-btn {
+		color: #a084ad;
+		border-color: #4c3c55;
 		margin-right: 35px;
 	}
 
@@ -1736,9 +1739,9 @@ Cart Page
 	text-align: right;
 }
 
-.total-info .primary-btn.chechout-btn {
-	border-color: #1e1e1e;
-	color: #1e1e1e;
+.total-info .primary-btn.checkout-btn {
+	border-color: #4c3c55;
+	color: #a084ad;
 }
 
 /*---------------------
@@ -2360,25 +2363,5 @@ Cart Page
 	.header-info {
 		padding: 10px 0;
 	}
-
-	/*-----------Cart items-----------*/
-
-	.cart-page {
-		margin: 80px auto;
-	}
-	table {
-		width: 100%;
-		border-collapse: collapse;
-	}
-	.cart-info {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	th {
-		text-align: left;
-		padding: 5px;
-		color: white;
-		background: #ff523b;
-		font-weight: normal;
-	}
+	
 }

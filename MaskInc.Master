@@ -33,33 +33,23 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    
-    <!-- Search model -->
-	<div class="search-model">
-		<div class="h-100 d-flex align-items-center justify-content-center">
-			<div class="search-close-switch">+</div>
-			<form class="search-model-form">
-				<input type="text" id="search-input" placeholder="Search here.....">
-			</form>
-		</div>
-	</div>
-	<!-- Search model end -->
-
+       
     <!-- Header Section Begin -->
     <header class="header-section">
+         <!-- Right Hand Side of Header -->
+          <div style='float: right;'><a href="ShoppingCart.aspx"><img src="assets/img/icons/cart.png"/></a></div>
+
             <div class="inner-header">
-                <div class="logo">
-                    <a href="ShoppingCart.aspx"><img src="assets/img/Free_Sample_By_Wix.jpg" alt=""></a>
+                <div style='float: left;'>
+                    <a href="Home.aspx"><img src="assets/img/Logo2.png" alt=""></a>
                 </div>
+</div>
+                 
                 <div class="header-right">
                     <img src="img/icons/search.png" alt="" class="search-trigger">
                     <img src="img/icons/man.png" alt="">
-                    <a href="ShoppingCart.aspx">
-                        <img src="img/icons/bag.png" alt="">
-                        <span>2</span>
-                    </a>
                 </div>
-                <div class="user-access">
+                <div  style='float: right;'>
                     <a href="Register.aspx">Register</a>
                     <a href="Login.aspx" class="in">Sign in</a>
                 </div>
@@ -72,7 +62,6 @@
                                 <li><a href="Nano Range.aspx">Nano Range</a></li>
                                 <li><a href="Custom.aspx">Custom</a></li>
                                  <li><a href="Cultural.aspx">Cultural</a></li>
-                                <li><a href="ShoppingCart.aspx">Shopping Cart</a></li>0
                                 <li><a href="CheckOut.aspx">Check out</a></li>
                             </ul>
                         </li>
@@ -81,8 +70,6 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
-        
     </header>
     <!-- Header Info Begin -->
     <div class="header-info">
@@ -172,12 +159,12 @@
         <div class="social-links-warp">
             <div class="container">
                 <div class="social-links">
-                    <a href="" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
-                    <a href="" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
-                    <a href="" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
-                    <a href="" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
-                    <a href="" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
-                    <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i><span>instagram</span></a>
+                    <a href="#" class="pinterest"><i class="fa fa-pinterest"></i><span>pinterest</span></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i><span>facebook</span></a>
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i><span>twitter</span></a>
+                    <a href="#" class="youtube"><i class="fa fa-youtube"></i><span>youtube</span></a>
+                    <a href="#" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
                 </div>
             </div>
              

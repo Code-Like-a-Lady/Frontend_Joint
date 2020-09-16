@@ -38,26 +38,21 @@
     <header class="header-section">
          <!-- Right Hand Side of Header -->
           <div style='float: right;'><a href="ShoppingCart.aspx"><img src="assets/img/icons/cart.png"/></a></div>
-
-            <div class="inner-header">
-                <div style='float: left;'>
-                    <a href="Home.aspx"><img src="assets/img/Logo2.png" alt=""></a>
-                </div>
-</div>
-                 
-                <div class="header-right">
-                    <img src="img/icons/search.png" alt="" class="search-trigger">
-                    <img src="img/icons/man.png" alt="">
-                </div>
+        
                 <div  style='float: right;'>
                     <a href="Register.aspx">Register</a>
                     <a href="Login.aspx" class="in">Sign in</a>
                 </div>
+
+        <!-- Right Hand Side of Header -->
+          <div style='float: left;'>
+            <a href="Home.aspx"><img src="assets/img/Logo2.png" alt=""></a>
+          </div>
                 <nav style='float:left;'class="main-menu mobile-menu">
                     <ul>
                         <li><a href="Home.aspx">Home</></a></li>
-                        <li><a href="./categories.html">Categories</a>
-                            <ul class="sub-menu">
+                        <li>Categories
+                            <ul class="sub-menu" >
                                 <li><a href="Kids.aspx">Kids</a></li>
                                 <li><a href="Nano Range.aspx">Nano Range</a></li>
                                 <li><a href="Custom.aspx">Custom</a></li>
@@ -65,7 +60,7 @@
                                 <li><a href="CheckOut.aspx">Check out</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="About.aspx">About</a></li>
                         <li><a href="CheckOut.aspx">CheckOut</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -84,7 +79,7 @@
                 <div class="col-md-4 text-left text-lg-center">
                     <div class="header-item">
                         <img src="img/icons/voucher.png" alt="">
-                        <p>Donate 50 masks for very 1000 marks you purchase</p>
+                        <p>Donate 10 masks for very 1000 masks you purchase</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-left text-xl-right">
@@ -178,14 +173,14 @@
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/main.js"></script>
       </form>
 </body>
 

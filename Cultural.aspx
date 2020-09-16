@@ -13,13 +13,13 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-img">
                             <figure>
-                                <img src="img/products/images (29).jpg" alt="">
+                                <img src="img/products/images(29).jpg" alt="">
                                 <div class="p-status">new</div>
                             </figure>
                         </div>
                         <div class="product-img">
                             <figure>
-                                <img src="img/products/images (29).jpg" alt="">
+                                <img src="img/products/images(29).jpg" alt="">
                                 <div class="p-status">new</div>
                             </figure>
                         </div>

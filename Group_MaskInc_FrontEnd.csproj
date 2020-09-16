@@ -408,6 +408,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="assets\img\categories-page\" />
+    <Folder Include="assets\img\css\" />
+    <Folder Include="assets\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\fonts\fontawesome-webfont.eot" />

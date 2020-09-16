@@ -16,23 +16,23 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
       <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     
 </head>
 <body>
     <form id="form1" runat="server">
-    <!-- Page Preloder -->
+    <!-- Page Preloder
     <div id="preloder">
-        <div class="loader"></div>
-    </div>
+       <div class="loader"></div>
+    </div> -->
        
     <!-- Header Section Begin -->
     <header class="header-section">
@@ -53,9 +53,9 @@
                     <a href="Register.aspx">Register</a>
                     <a href="Login.aspx" class="in">Sign in</a>
                 </div>
-                <nav class="main-menu mobile-menu">
+                <nav style='float:left;'class="main-menu mobile-menu">
                     <ul>
-                        <li><a class="active" href="Home.aspx">Home</a></li>
+                        <li><a href="Home.aspx">Home</></a></li>
                         <li><a href="./categories.html">Categories</a>
                             <ul class="sub-menu">
                                 <li><a href="Kids.aspx">Kids</a></li>
@@ -169,9 +169,7 @@
             </div>
              
 <div class="container text-center pt-5">
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+
             </div>
             
          </div>

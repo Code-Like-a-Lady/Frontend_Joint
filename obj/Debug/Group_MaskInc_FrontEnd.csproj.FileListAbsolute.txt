@@ -289,8 +289,8 @@ C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\bin\Newtonsoft.Json.xml
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\bin\Antlr3.Runtime.pdb
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.csprojAssemblyReference.cache
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.csproj.CoreCompileInputs.cache
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.csproj.CopyComplete
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.dll
 C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.pdb
+C:\Users\Laaiqah\Desktop\IFM Team 2\Frontend_Joint\obj\Debug\Group_MaskInc_FrontEnd.csprojAssemblyReference.cache

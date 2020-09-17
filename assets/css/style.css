@@ -1602,14 +1602,13 @@ ol {
 			}
 
 	.cart-btn .site-btn.clear-btn {
-		color: #a084ad;
-		border-color: #4c3c55;
+		color: #000;
+		border-color:#9170b8;
 		margin-right: 5px;
 	}
-
 	.cart-btn .site-btn.update-btn {
-		color: #a084ad;
-		border-color: #4c3c55;
+		color: #000;
+		border-color: #9170b8;
 		margin-right: 35px;
 	}
 
@@ -1739,18 +1738,19 @@ ol {
 	text-align: right;
 }
 
-.total-info .primary-btn.checkout-btn {
-	border-color: #4c3c55;
-	color: #a084ad;
+.total-info .primary-btn.chechout-btn {
+	border-color:#9170b8;
+	color: #1e1e1e;
 }
+
+
 
 /*---------------------
   Cart Total Page 
 -----------------------*/
-
-.cart-total-page {
-	padding-top: 0;
-}
+	.cart-total-page {
+		padding-top: 0;
+	}
 
 .checkout-form h3 {
 	color: #1e1e1e;

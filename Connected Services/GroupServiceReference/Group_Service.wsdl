@@ -242,6 +242,24 @@
   <wsdl:message name="IGroup_Service_deleteProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:deleteProductResponse" />
   </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetAllDeliveries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDeliveries" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetAllDeliveries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllDeliveriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetDeliveriesForClient_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesForClient" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetDeliveriesForClient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesForClientResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetDeliveriesByCompany_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesByCompany" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_GetDeliveriesByCompany_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeliveriesByCompanyResponse" />
+  </wsdl:message>
   <wsdl:portType name="IGroup_Service">
     <wsdl:operation name="login">
       <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/login" message="tns:IGroup_Service_login_InputMessage" />
@@ -398,6 +416,18 @@
     <wsdl:operation name="deleteProduct">
       <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/deleteProduct" message="tns:IGroup_Service_deleteProduct_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/deleteProductResponse" message="tns:IGroup_Service_deleteProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDeliveries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/GetAllDeliveries" message="tns:IGroup_Service_GetAllDeliveries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/GetAllDeliveriesResponse" message="tns:IGroup_Service_GetAllDeliveries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveriesForClient">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/GetDeliveriesForClient" message="tns:IGroup_Service_GetDeliveriesForClient_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/GetDeliveriesForClientResponse" message="tns:IGroup_Service_GetDeliveriesForClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveriesByCompany">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/GetDeliveriesByCompany" message="tns:IGroup_Service_GetDeliveriesByCompany_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/GetDeliveriesByCompanyResponse" message="tns:IGroup_Service_GetDeliveriesByCompany_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGroup_Service" type="tns:IGroup_Service">
@@ -746,6 +776,33 @@
     </wsdl:operation>
     <wsdl:operation name="deleteProduct">
       <soap:operation soapAction="http://tempuri.org/IGroup_Service/deleteProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllDeliveries">
+      <soap:operation soapAction="http://tempuri.org/IGroup_Service/GetAllDeliveries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveriesForClient">
+      <soap:operation soapAction="http://tempuri.org/IGroup_Service/GetDeliveriesForClient" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeliveriesByCompany">
+      <soap:operation soapAction="http://tempuri.org/IGroup_Service/GetDeliveriesByCompany" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

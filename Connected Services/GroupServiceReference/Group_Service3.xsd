@@ -593,4 +593,44 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetAllDeliveries">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllDeliveriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Group_Project" minOccurs="0" name="GetAllDeliveriesResult" nillable="true" type="q19:ArrayOfDelivery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeliveriesForClient">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeliveriesForClientResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/Group_Project" minOccurs="0" name="GetDeliveriesForClientResult" nillable="true" type="q20:ArrayOfDelivery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeliveriesByCompany">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeliveryID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDeliveriesByCompanyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/Group_Project" minOccurs="0" name="GetDeliveriesByCompanyResult" nillable="true" type="q21:ArrayOfDelivery" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

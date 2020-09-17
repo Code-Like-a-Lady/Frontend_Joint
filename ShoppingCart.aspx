@@ -39,12 +39,13 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="coupon-input">
-                            <input type="text" placeholder="Enter coupon code">
+                            <input type="text" placeholder="Enter Coupon code">
                         </div>
                     </div>
                     <div class="col-lg-5 offset-lg-1 text-left text-lg-right">
                         <div class="site-btn clear-btn">Clear Cart</div>
-                        <div class="site-btn update-btn">Update Cart</div>
+                        <a href="Home.aspx"class="site-btn update-btn">Add to Cart</a>
+                       
                     </div>
                 </div>
             </div>
@@ -55,35 +56,56 @@
                     <div class="col-lg-12">
                         <div class="shipping-info">
                             <h5>Choose a shipping</h5>
-                            <div class="chose-shipping">
+                            <div class="choose-shipping">
                                 <div class="cs-item">
                                     <input type="radio" name="cs" id="one">
                                     <label for="one" class="active">
-                                        Free Standard shhipping
-                                        <span>Estimate for New York</span>
+                                       Express
+                                        <span>3 to 5 business days</span>
                                     </label>
                                 </div>
+
                                 <div class="cs-item">
                                     <input type="radio" name="cs" id="two">
                                     <label for="two">
-                                        Next Day delievery 
+                                        RAM
+                                        <span>7 to 10 business days</span>
                                     </label>
                                 </div>
-                                <div class="cs-item last">
+
+                                <div class="cs-item">
                                     <input type="radio" name="cs" id="three">
                                     <label for="three">
-                                        In Store Pickup - Free
+                                        Weekend Galore
+                                        <span>Closest weekend delivery </span>
+                                    </label>
+                                </div>
+
+                                 <div class="cs-item">
+                                    <input type="radio" name="cs" id="four">
+                                    <label for="four">
+                                       The courier company 
+                                        <span>30 business days</span>
+                                    </label>
+                                </div>
+
+                        <div class="cs-item last">
+                                    <input type="radio" name="cs" id="five">
+                                    <label for="five">
+                                       Speedy Delivery 
+                                        <span>1 to 3 business days  </span>
                                     </label>
                                 </div>
                             </div>
                         </div>
+
                         <div class="total-info">
-                            <div class="total-table">
+                            <div class="total-table" >
                                 <table>
                                     <thead>
                                         <tr>
                                             <th>Total</th>
-                                            <th>Subtotal</th>
+                                            <th>Tax</th>
                                             <th>Shipping</th>
                                             <th class="total-cart">Total Cart</th>
                                         </tr>
@@ -91,7 +113,7 @@
                                     <tbody>
                                         <tr>
                                             <td class="total">R0</td>
-                                            <td class="sub-total">R0</td>
+                                            <td class="tax">R0</td>
                                             <td class="shipping">R0</td>
                                             <td class="total-cart-p">R0</td>
                                         </tr>
@@ -100,7 +122,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 text-right">
-                                    <a href="CheckOut.aspx" class="primary-btn checkout-btn">Proceed to checkout</a>
+                                    <a href="CheckOut.aspx" class="primary-btn chechout-btn">Proceed to Checkout</a>
                                 </div>
                             </div>
                         </div>

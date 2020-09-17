@@ -38,6 +38,9 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private string EmailField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Binary ImagesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -128,6 +131,19 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Binary Images {
+            get {
+                return this.ImagesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImagesField, value) != true)) {
+                    this.ImagesField = value;
+                    this.RaisePropertyChanged("Images");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Name {
             get {
                 return this.NameField;
@@ -188,6 +204,51 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
                 if ((object.ReferenceEquals(this.UsertypeField, value) != true)) {
                     this.UsertypeField = value;
                     this.RaisePropertyChanged("Usertype");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Binary", Namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq")]
+    [System.SerializableAttribute()]
+    public partial class Binary : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private byte[] BytesField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public byte[] Bytes {
+            get {
+                return this.BytesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BytesField, value) != true)) {
+                    this.BytesField = value;
+                    this.RaisePropertyChanged("Bytes");
                 }
             }
         }
@@ -455,6 +516,9 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private int Admin_User_IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Custom_Product Custom_ProductField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private System.DateTime Date_CreatedField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -462,9 +526,6 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Group_MaskInc_FrontEnd.GroupServiceReference.Donation[] DonationsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ImageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int Mask_IdField;
@@ -540,6 +601,19 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Custom_Product Custom_Product {
+            get {
+                return this.Custom_ProductField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Custom_ProductField, value) != true)) {
+                    this.Custom_ProductField = value;
+                    this.RaisePropertyChanged("Custom_Product");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.DateTime Date_Created {
             get {
                 return this.Date_CreatedField;
@@ -574,19 +648,6 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
                 if ((object.ReferenceEquals(this.DonationsField, value) != true)) {
                     this.DonationsField = value;
                     this.RaisePropertyChanged("Donations");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Image {
-            get {
-                return this.ImageField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
-                    this.ImageField = value;
-                    this.RaisePropertyChanged("Image");
                 }
             }
         }
@@ -691,6 +752,99 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
                 if ((this.Unit_PriceField.Equals(value) != true)) {
                     this.Unit_PriceField = value;
                     this.RaisePropertyChanged("Unit_Price");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Custom_Product", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
+    [System.SerializableAttribute()]
+    public partial class Custom_Product : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Custom_SizeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int FilterField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Product ProductField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Product_IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Custom_Size {
+            get {
+                return this.Custom_SizeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Custom_SizeField, value) != true)) {
+                    this.Custom_SizeField = value;
+                    this.RaisePropertyChanged("Custom_Size");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Filter {
+            get {
+                return this.FilterField;
+            }
+            set {
+                if ((this.FilterField.Equals(value) != true)) {
+                    this.FilterField = value;
+                    this.RaisePropertyChanged("Filter");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Product Product {
+            get {
+                return this.ProductField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProductField, value) != true)) {
+                    this.ProductField = value;
+                    this.RaisePropertyChanged("Product");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Product_Id {
+            get {
+                return this.Product_IdField;
+            }
+            set {
+                if ((this.Product_IdField.Equals(value) != true)) {
+                    this.Product_IdField = value;
+                    this.RaisePropertyChanged("Product_Id");
                 }
             }
         }
@@ -1042,6 +1196,12 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Client ClientField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Client_User_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private Group_MaskInc_FrontEnd.GroupServiceReference.Delivery DeliveryField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1063,6 +1223,9 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private System.Nullable<int> Order_QuantityField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Order_SessionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private decimal Order_ShippingField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1078,7 +1241,13 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private System.DateTime Order_dateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClientsField;
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Payment PaymentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> Payment_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Payment_TypesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1087,6 +1256,32 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Client Client {
+            get {
+                return this.ClientField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ClientField, value) != true)) {
+                    this.ClientField = value;
+                    this.RaisePropertyChanged("Client");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Client_User_Id {
+            get {
+                return this.Client_User_IdField;
+            }
+            set {
+                if ((this.Client_User_IdField.Equals(value) != true)) {
+                    this.Client_User_IdField = value;
+                    this.RaisePropertyChanged("Client_User_Id");
+                }
             }
         }
         
@@ -1182,6 +1377,19 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Order_Session {
+            get {
+                return this.Order_SessionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Order_SessionField, value) != true)) {
+                    this.Order_SessionField = value;
+                    this.RaisePropertyChanged("Order_Session");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public decimal Order_Shipping {
             get {
                 return this.Order_ShippingField;
@@ -1247,6 +1455,128 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Payment Payment {
+            get {
+                return this.PaymentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentField, value) != true)) {
+                    this.PaymentField = value;
+                    this.RaisePropertyChanged("Payment");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> Payment_Id {
+            get {
+                return this.Payment_IdField;
+            }
+            set {
+                if ((this.Payment_IdField.Equals(value) != true)) {
+                    this.Payment_IdField = value;
+                    this.RaisePropertyChanged("Payment_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Payment_Types {
+            get {
+                return this.Payment_TypesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Payment_TypesField, value) != true)) {
+                    this.Payment_TypesField = value;
+                    this.RaisePropertyChanged("Payment_Types");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Client", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
+    [System.SerializableAttribute()]
+    public partial class Client : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Business_TypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Feedback[] FeedbacksField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table[] Order_TablesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClientsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Business_Type {
+            get {
+                return this.Business_TypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Business_TypeField, value) != true)) {
+                    this.Business_TypeField = value;
+                    this.RaisePropertyChanged("Business_Type");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Feedback[] Feedbacks {
+            get {
+                return this.FeedbacksField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FeedbacksField, value) != true)) {
+                    this.FeedbacksField = value;
+                    this.RaisePropertyChanged("Feedbacks");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table[] Order_Tables {
+            get {
+                return this.Order_TablesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Order_TablesField, value) != true)) {
+                    this.Order_TablesField = value;
+                    this.RaisePropertyChanged("Order_Tables");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClients {
             get {
                 return this.PayClientsField;
@@ -1255,6 +1585,19 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
                 if ((object.ReferenceEquals(this.PayClientsField, value) != true)) {
                     this.PayClientsField = value;
                     this.RaisePropertyChanged("PayClients");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_Id {
+            get {
+                return this.User_IdField;
+            }
+            set {
+                if ((this.User_IdField.Equals(value) != true)) {
+                    this.User_IdField = value;
+                    this.RaisePropertyChanged("User_Id");
                 }
             }
         }
@@ -1279,6 +1622,9 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime Delivered_TimeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int Delivery_IdField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -1288,7 +1634,7 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table[] Order_TablesField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Time_NeededField;
+        private System.DateTime Pickup_TimeField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1297,6 +1643,19 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Delivered_Time {
+            get {
+                return this.Delivered_TimeField;
+            }
+            set {
+                if ((this.Delivered_TimeField.Equals(value) != true)) {
+                    this.Delivered_TimeField = value;
+                    this.RaisePropertyChanged("Delivered_Time");
+                }
             }
         }
         
@@ -1340,14 +1699,187 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Time_Needed {
+        public System.DateTime Pickup_Time {
             get {
-                return this.Time_NeededField;
+                return this.Pickup_TimeField;
             }
             set {
-                if ((object.ReferenceEquals(this.Time_NeededField, value) != true)) {
-                    this.Time_NeededField = value;
-                    this.RaisePropertyChanged("Time_Needed");
+                if ((this.Pickup_TimeField.Equals(value) != true)) {
+                    this.Pickup_TimeField = value;
+                    this.RaisePropertyChanged("Pickup_Time");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Payment", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
+    [System.SerializableAttribute()]
+    public partial class Payment : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int CVVField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Card_numField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Cardholder_NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime Expiry_DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table[] Order_TablesField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClientsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.PaymentType PaymentTypeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PaymentType_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Payment_IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int CVV {
+            get {
+                return this.CVVField;
+            }
+            set {
+                if ((this.CVVField.Equals(value) != true)) {
+                    this.CVVField = value;
+                    this.RaisePropertyChanged("CVV");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Card_num {
+            get {
+                return this.Card_numField;
+            }
+            set {
+                if ((this.Card_numField.Equals(value) != true)) {
+                    this.Card_numField = value;
+                    this.RaisePropertyChanged("Card_num");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Cardholder_Name {
+            get {
+                return this.Cardholder_NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Cardholder_NameField, value) != true)) {
+                    this.Cardholder_NameField = value;
+                    this.RaisePropertyChanged("Cardholder_Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Expiry_Date {
+            get {
+                return this.Expiry_DateField;
+            }
+            set {
+                if ((this.Expiry_DateField.Equals(value) != true)) {
+                    this.Expiry_DateField = value;
+                    this.RaisePropertyChanged("Expiry_Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table[] Order_Tables {
+            get {
+                return this.Order_TablesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Order_TablesField, value) != true)) {
+                    this.Order_TablesField = value;
+                    this.RaisePropertyChanged("Order_Tables");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClients {
+            get {
+                return this.PayClientsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PayClientsField, value) != true)) {
+                    this.PayClientsField = value;
+                    this.RaisePropertyChanged("PayClients");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.PaymentType PaymentType {
+            get {
+                return this.PaymentTypeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentTypeField, value) != true)) {
+                    this.PaymentTypeField = value;
+                    this.RaisePropertyChanged("PaymentType");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PaymentType_Id {
+            get {
+                return this.PaymentType_IdField;
+            }
+            set {
+                if ((this.PaymentType_IdField.Equals(value) != true)) {
+                    this.PaymentType_IdField = value;
+                    this.RaisePropertyChanged("PaymentType_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Payment_Id {
+            get {
+                return this.Payment_IdField;
+            }
+            set {
+                if ((this.Payment_IdField.Equals(value) != true)) {
+                    this.Payment_IdField = value;
+                    this.RaisePropertyChanged("Payment_Id");
                 }
             }
         }
@@ -1473,397 +2005,6 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="PayClient", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
-    [System.SerializableAttribute()]
-    public partial class PayClient : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Client ClientField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int Order_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table Order_TableField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int PayClient_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Payment PaymentField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int Payment_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int User_IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Client Client {
-            get {
-                return this.ClientField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ClientField, value) != true)) {
-                    this.ClientField = value;
-                    this.RaisePropertyChanged("Client");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Order_Id {
-            get {
-                return this.Order_IdField;
-            }
-            set {
-                if ((this.Order_IdField.Equals(value) != true)) {
-                    this.Order_IdField = value;
-                    this.RaisePropertyChanged("Order_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Order_Table Order_Table {
-            get {
-                return this.Order_TableField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Order_TableField, value) != true)) {
-                    this.Order_TableField = value;
-                    this.RaisePropertyChanged("Order_Table");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int PayClient_Id {
-            get {
-                return this.PayClient_IdField;
-            }
-            set {
-                if ((this.PayClient_IdField.Equals(value) != true)) {
-                    this.PayClient_IdField = value;
-                    this.RaisePropertyChanged("PayClient_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Payment Payment {
-            get {
-                return this.PaymentField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PaymentField, value) != true)) {
-                    this.PaymentField = value;
-                    this.RaisePropertyChanged("Payment");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Payment_Id {
-            get {
-                return this.Payment_IdField;
-            }
-            set {
-                if ((this.Payment_IdField.Equals(value) != true)) {
-                    this.Payment_IdField = value;
-                    this.RaisePropertyChanged("Payment_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int User_Id {
-            get {
-                return this.User_IdField;
-            }
-            set {
-                if ((this.User_IdField.Equals(value) != true)) {
-                    this.User_IdField = value;
-                    this.RaisePropertyChanged("User_Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Client", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
-    [System.SerializableAttribute()]
-    public partial class Client : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Business_TypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Feedback[] FeedbacksField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClientsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int User_IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Business_Type {
-            get {
-                return this.Business_TypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Business_TypeField, value) != true)) {
-                    this.Business_TypeField = value;
-                    this.RaisePropertyChanged("Business_Type");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Feedback[] Feedbacks {
-            get {
-                return this.FeedbacksField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FeedbacksField, value) != true)) {
-                    this.FeedbacksField = value;
-                    this.RaisePropertyChanged("Feedbacks");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClients {
-            get {
-                return this.PayClientsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PayClientsField, value) != true)) {
-                    this.PayClientsField = value;
-                    this.RaisePropertyChanged("PayClients");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int User_Id {
-            get {
-                return this.User_IdField;
-            }
-            set {
-                if ((this.User_IdField.Equals(value) != true)) {
-                    this.User_IdField = value;
-                    this.RaisePropertyChanged("User_Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Payment", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
-    [System.SerializableAttribute()]
-    public partial class Payment : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Binary CVVField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Card_numField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Cardholder_NameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime Expiry_DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClientsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.PaymentType PaymentTypeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int PaymentType_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int Payment_IdField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Binary CVV {
-            get {
-                return this.CVVField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.CVVField, value) != true)) {
-                    this.CVVField = value;
-                    this.RaisePropertyChanged("CVV");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Card_num {
-            get {
-                return this.Card_numField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Card_numField, value) != true)) {
-                    this.Card_numField = value;
-                    this.RaisePropertyChanged("Card_num");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Cardholder_Name {
-            get {
-                return this.Cardholder_NameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Cardholder_NameField, value) != true)) {
-                    this.Cardholder_NameField = value;
-                    this.RaisePropertyChanged("Cardholder_Name");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Expiry_Date {
-            get {
-                return this.Expiry_DateField;
-            }
-            set {
-                if ((this.Expiry_DateField.Equals(value) != true)) {
-                    this.Expiry_DateField = value;
-                    this.RaisePropertyChanged("Expiry_Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.PayClient[] PayClients {
-            get {
-                return this.PayClientsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PayClientsField, value) != true)) {
-                    this.PayClientsField = value;
-                    this.RaisePropertyChanged("PayClients");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.PaymentType PaymentType {
-            get {
-                return this.PaymentTypeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PaymentTypeField, value) != true)) {
-                    this.PaymentTypeField = value;
-                    this.RaisePropertyChanged("PaymentType");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int PaymentType_Id {
-            get {
-                return this.PaymentType_IdField;
-            }
-            set {
-                if ((this.PaymentType_IdField.Equals(value) != true)) {
-                    this.PaymentType_IdField = value;
-                    this.RaisePropertyChanged("PaymentType_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Payment_Id {
-            get {
-                return this.Payment_IdField;
-            }
-            set {
-                if ((this.Payment_IdField.Equals(value) != true)) {
-                    this.Payment_IdField = value;
-                    this.RaisePropertyChanged("Payment_Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Feedback", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
     [System.SerializableAttribute()]
     public partial class Feedback : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -1957,15 +2098,27 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Binary", Namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="PayClient", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
     [System.SerializableAttribute()]
-    public partial class Binary : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class PayClient : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private byte[] BytesField;
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Client ClientField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int PayClient_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Payment PaymentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Payment_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1978,14 +2131,66 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public byte[] Bytes {
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Client Client {
             get {
-                return this.BytesField;
+                return this.ClientField;
             }
             set {
-                if ((object.ReferenceEquals(this.BytesField, value) != true)) {
-                    this.BytesField = value;
-                    this.RaisePropertyChanged("Bytes");
+                if ((object.ReferenceEquals(this.ClientField, value) != true)) {
+                    this.ClientField = value;
+                    this.RaisePropertyChanged("Client");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int PayClient_Id {
+            get {
+                return this.PayClient_IdField;
+            }
+            set {
+                if ((this.PayClient_IdField.Equals(value) != true)) {
+                    this.PayClient_IdField = value;
+                    this.RaisePropertyChanged("PayClient_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Payment Payment {
+            get {
+                return this.PaymentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PaymentField, value) != true)) {
+                    this.PaymentField = value;
+                    this.RaisePropertyChanged("Payment");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Payment_Id {
+            get {
+                return this.Payment_IdField;
+            }
+            set {
+                if ((this.Payment_IdField.Equals(value) != true)) {
+                    this.Payment_IdField = value;
+                    this.RaisePropertyChanged("Payment_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_Id {
+            get {
+                return this.User_IdField;
+            }
+            set {
+                if ((this.User_IdField.Equals(value) != true)) {
+                    this.User_IdField = value;
+                    this.RaisePropertyChanged("User_Id");
                 }
             }
         }
@@ -2093,7 +2298,7 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         private string NameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[] Product_SizesField;
+        private Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size Product_SizeField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int Size_IdField;
@@ -2135,14 +2340,14 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[] Product_Sizes {
+        public Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size Product_Size {
             get {
-                return this.Product_SizesField;
+                return this.Product_SizeField;
             }
             set {
-                if ((object.ReferenceEquals(this.Product_SizesField, value) != true)) {
-                    this.Product_SizesField = value;
-                    this.RaisePropertyChanged("Product_Sizes");
+                if ((object.ReferenceEquals(this.Product_SizeField, value) != true)) {
+                    this.Product_SizeField = value;
+                    this.RaisePropertyChanged("Product_Size");
                 }
             }
         }
@@ -2156,115 +2361,6 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
                 if ((this.Size_IdField.Equals(value) != true)) {
                     this.Size_IdField = value;
                     this.RaisePropertyChanged("Size_Id");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Custom_Product", Namespace="http://schemas.datacontract.org/2004/07/Group_Project")]
-    [System.SerializableAttribute()]
-    public partial class Custom_Product : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ColourField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int CustomProduct_IdField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string Custom_SizeField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int FilterField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LogoField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Colour {
-            get {
-                return this.ColourField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ColourField, value) != true)) {
-                    this.ColourField = value;
-                    this.RaisePropertyChanged("Colour");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int CustomProduct_Id {
-            get {
-                return this.CustomProduct_IdField;
-            }
-            set {
-                if ((this.CustomProduct_IdField.Equals(value) != true)) {
-                    this.CustomProduct_IdField = value;
-                    this.RaisePropertyChanged("CustomProduct_Id");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Custom_Size {
-            get {
-                return this.Custom_SizeField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.Custom_SizeField, value) != true)) {
-                    this.Custom_SizeField = value;
-                    this.RaisePropertyChanged("Custom_Size");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Filter {
-            get {
-                return this.FilterField;
-            }
-            set {
-                if ((this.FilterField.Equals(value) != true)) {
-                    this.FilterField = value;
-                    this.RaisePropertyChanged("Filter");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Logo {
-            get {
-                return this.LogoField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LogoField, value) != true)) {
-                    this.LogoField = value;
-                    this.RaisePropertyChanged("Logo");
                 }
             }
         }
@@ -2511,23 +2607,11 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getProductsbycategory", ReplyAction="http://tempuri.org/IGroup_Service/getProductsbycategoryResponse")]
         System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product[]> getProductsbycategoryAsync(int maskid);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
-        Group_MaskInc_FrontEnd.GroupServiceReference.Product[] getproductbyprice(decimal min, decimal max);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/deleteProduct", ReplyAction="http://tempuri.org/IGroup_Service/deleteProductResponse")]
+        string deleteProduct(int P_Id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
-        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product[]> getproductbypriceAsync(decimal min, decimal max);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbysize", ReplyAction="http://tempuri.org/IGroup_Service/getproductbysizeResponse")]
-        Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[] getproductbysize(int sizeid);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbysize", ReplyAction="http://tempuri.org/IGroup_Service/getproductbysizeResponse")]
-        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[]> getproductbysizeAsync(int sizeid);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getsproductsize", ReplyAction="http://tempuri.org/IGroup_Service/getsproductsizeResponse")]
-        Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size getsproductsize(int pid);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getsproductsize", ReplyAction="http://tempuri.org/IGroup_Service/getsproductsizeResponse")]
-        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size> getsproductsizeAsync(int pid);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/deleteProduct", ReplyAction="http://tempuri.org/IGroup_Service/deleteProductResponse")]
+        System.Threading.Tasks.Task<string> deleteProductAsync(int P_Id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -2861,28 +2945,12 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
             return base.Channel.getProductsbycategoryAsync(maskid);
         }
         
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Product[] getproductbyprice(decimal min, decimal max) {
-            return base.Channel.getproductbyprice(min, max);
+        public string deleteProduct(int P_Id) {
+            return base.Channel.deleteProduct(P_Id);
         }
         
-        public System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product[]> getproductbypriceAsync(decimal min, decimal max) {
-            return base.Channel.getproductbypriceAsync(min, max);
-        }
-        
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[] getproductbysize(int sizeid) {
-            return base.Channel.getproductbysize(sizeid);
-        }
-        
-        public System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[]> getproductbysizeAsync(int sizeid) {
-            return base.Channel.getproductbysizeAsync(sizeid);
-        }
-        
-        public Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size getsproductsize(int pid) {
-            return base.Channel.getsproductsize(pid);
-        }
-        
-        public System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size> getsproductsizeAsync(int pid) {
-            return base.Channel.getsproductsizeAsync(pid);
+        public System.Threading.Tasks.Task<string> deleteProductAsync(int P_Id) {
+            return base.Channel.deleteProductAsync(P_Id);
         }
     }
 }

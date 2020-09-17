@@ -5,39 +5,36 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Group_MaskInc_FrontEnd.GroupServiceReference;
 
 namespace Group_MaskInc_FrontEnd
 {
     public partial class WebForm5 : System.Web.UI.Page
     {
-       Group_ServiceClient SC = new Group_ServiceClient();
+        Group_ServiceClient SC = new Group_ServiceClient();
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+            string DisplayDelivery = " ";
+
+            DisplayDelivery += "<div class='cs-item'><input type ='radio' name='cs' id='four'>";
+            DisplayDelivery += " <label for='three'>In Store Pickup - Free<span> Estimate for New York</span>";
+            DisplayDelivery += "</label> </div>";
+
             string Display = " ";
             dynamic products;
-            
+
             //SC.getProduct();
             //foreach(Product p in products)
             //{
-                Display = "<tr><td class='product-col'><img src ='img / product / images(18).jpg' alt=''>";
-                Display = " <div class='p-title'><h5>Kids Mask</h5></div></td>";
-                Display = "<td class='price-col'>R0</td><td class='quantity-col'><div class='pro-qty'>";
-                Display = "<input type = 'text' value='1'> </div></td> ";
-                Display = "<td class='total'>R0</td><td class='product-close'>x</td></tr>";
+            Display = "<tr><td class='product-col'><img src ='img / product / images(18).jpg' alt=''>";
+            Display = " <div class='p-title'><h5>Kids Mask</h5></div></td>";
+            Display = "<td class='price-col'>R0</td><td class='quantity-col'><div class='pro-qty'>";
+            Display = "<input type = 'text' value='1'> </div></td> ";
+            Display = "<td class='total'>R0</td><td class='product-close'>x</td></tr>";
 
             //}
         }
-                            
-                            
-                            
-                                
-                                   
-                               
-                            
-                            
-                           
-                        
+
     }
 }

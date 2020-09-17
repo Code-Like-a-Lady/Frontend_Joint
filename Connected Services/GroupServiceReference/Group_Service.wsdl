@@ -236,23 +236,11 @@
   <wsdl:message name="IGroup_Service_getProductsbycategory_OutputMessage">
     <wsdl:part name="parameters" element="tns:getProductsbycategoryResponse" />
   </wsdl:message>
-  <wsdl:message name="IGroup_Service_getproductbyprice_InputMessage">
-    <wsdl:part name="parameters" element="tns:getproductbyprice" />
+  <wsdl:message name="IGroup_Service_deleteProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteProduct" />
   </wsdl:message>
-  <wsdl:message name="IGroup_Service_getproductbyprice_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getproductbypriceResponse" />
-  </wsdl:message>
-  <wsdl:message name="IGroup_Service_getproductbysize_InputMessage">
-    <wsdl:part name="parameters" element="tns:getproductbysize" />
-  </wsdl:message>
-  <wsdl:message name="IGroup_Service_getproductbysize_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getproductbysizeResponse" />
-  </wsdl:message>
-  <wsdl:message name="IGroup_Service_getsproductsize_InputMessage">
-    <wsdl:part name="parameters" element="tns:getsproductsize" />
-  </wsdl:message>
-  <wsdl:message name="IGroup_Service_getsproductsize_OutputMessage">
-    <wsdl:part name="parameters" element="tns:getsproductsizeResponse" />
+  <wsdl:message name="IGroup_Service_deleteProduct_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteProductResponse" />
   </wsdl:message>
   <wsdl:portType name="IGroup_Service">
     <wsdl:operation name="login">
@@ -407,17 +395,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/getProductsbycategory" message="tns:IGroup_Service_getProductsbycategory_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/getProductsbycategoryResponse" message="tns:IGroup_Service_getProductsbycategory_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="getproductbyprice">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/getproductbyprice" message="tns:IGroup_Service_getproductbyprice_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/getproductbypriceResponse" message="tns:IGroup_Service_getproductbyprice_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="getproductbysize">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/getproductbysize" message="tns:IGroup_Service_getproductbysize_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/getproductbysizeResponse" message="tns:IGroup_Service_getproductbysize_OutputMessage" />
-    </wsdl:operation>
-    <wsdl:operation name="getsproductsize">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/getsproductsize" message="tns:IGroup_Service_getsproductsize_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/getsproductsizeResponse" message="tns:IGroup_Service_getsproductsize_OutputMessage" />
+    <wsdl:operation name="deleteProduct">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGroup_Service/deleteProduct" message="tns:IGroup_Service_deleteProduct_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGroup_Service/deleteProductResponse" message="tns:IGroup_Service_deleteProduct_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGroup_Service" type="tns:IGroup_Service">
@@ -764,26 +744,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="getproductbyprice">
-      <soap:operation soapAction="http://tempuri.org/IGroup_Service/getproductbyprice" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getproductbysize">
-      <soap:operation soapAction="http://tempuri.org/IGroup_Service/getproductbysize" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="getsproductsize">
-      <soap:operation soapAction="http://tempuri.org/IGroup_Service/getsproductsize" style="document" />
+    <wsdl:operation name="deleteProduct">
+      <soap:operation soapAction="http://tempuri.org/IGroup_Service/deleteProduct" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

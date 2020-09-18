@@ -2521,6 +2521,12 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         Group_MaskInc_FrontEnd.GroupServiceReference.Product[] getproductbyprice(decimal min, decimal max);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
+<<<<<<< Updated upstream
+=======
+        Group_MaskInc_FrontEnd.GroupServiceReference.Product[] getproductbyprice(decimal min, decimal max);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
+>>>>>>> Stashed changes
         System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product[]> getproductbypriceAsync(decimal min, decimal max);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbysize", ReplyAction="http://tempuri.org/IGroup_Service/getproductbysizeResponse")]
@@ -2534,6 +2540,12 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getsproductsize", ReplyAction="http://tempuri.org/IGroup_Service/getsproductsizeResponse")]
         System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size> getsproductsizeAsync(int sid);
+<<<<<<< Updated upstream
+=======
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/GetAllDeliveries", ReplyAction="http://tempuri.org/IGroup_Service/GetAllDeliveriesResponse")]
+        Group_MaskInc_FrontEnd.GroupServiceReference.Delivery[] GetAllDeliveries();
+>>>>>>> Stashed changes
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/GetAllDeliveries", ReplyAction="http://tempuri.org/IGroup_Service/GetAllDeliveriesResponse")]
         Group_MaskInc_FrontEnd.GroupServiceReference.Delivery[] GetAllDeliveries();

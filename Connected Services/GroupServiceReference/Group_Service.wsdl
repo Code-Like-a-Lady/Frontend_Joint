@@ -269,6 +269,24 @@
   <wsdl:message name="IGroup_Service_getsproductsize_OutputMessage">
     <wsdl:part name="parameters" element="tns:getsproductsizeResponse" />
   </wsdl:message>
+  <wsdl:message name="IGroup_Service_getproductbyprice_InputMessage">
+    <wsdl:part name="parameters" element="tns:getproductbyprice" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_getproductbyprice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getproductbypriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_getproductbysize_InputMessage">
+    <wsdl:part name="parameters" element="tns:getproductbysize" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_getproductbysize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getproductbysizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_getsproductsize_InputMessage">
+    <wsdl:part name="parameters" element="tns:getsproductsize" />
+  </wsdl:message>
+  <wsdl:message name="IGroup_Service_getsproductsize_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getsproductsizeResponse" />
+  </wsdl:message>
   <wsdl:message name="IGroup_Service_GetAllDeliveries_InputMessage">
     <wsdl:part name="parameters" element="tns:GetAllDeliveries" />
 >>>>>>> Stashed changes

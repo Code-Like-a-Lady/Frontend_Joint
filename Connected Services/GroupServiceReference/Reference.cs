@@ -2543,6 +2543,24 @@ namespace Group_MaskInc_FrontEnd.GroupServiceReference {
 <<<<<<< Updated upstream
 =======
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
+        Group_MaskInc_FrontEnd.GroupServiceReference.Product[] getproductbyprice(decimal min, decimal max);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbyprice", ReplyAction="http://tempuri.org/IGroup_Service/getproductbypriceResponse")]
+        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product[]> getproductbypriceAsync(decimal min, decimal max);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbysize", ReplyAction="http://tempuri.org/IGroup_Service/getproductbysizeResponse")]
+        Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[] getproductbysize(int sizeid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getproductbysize", ReplyAction="http://tempuri.org/IGroup_Service/getproductbysizeResponse")]
+        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size[]> getproductbysizeAsync(int sizeid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getsproductsize", ReplyAction="http://tempuri.org/IGroup_Service/getsproductsizeResponse")]
+        Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size getsproductsize(int sid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/getsproductsize", ReplyAction="http://tempuri.org/IGroup_Service/getsproductsizeResponse")]
+        System.Threading.Tasks.Task<Group_MaskInc_FrontEnd.GroupServiceReference.Product_Size> getsproductsizeAsync(int sid);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGroup_Service/GetAllDeliveries", ReplyAction="http://tempuri.org/IGroup_Service/GetAllDeliveriesResponse")]
         Group_MaskInc_FrontEnd.GroupServiceReference.Delivery[] GetAllDeliveries();
 >>>>>>> Stashed changes

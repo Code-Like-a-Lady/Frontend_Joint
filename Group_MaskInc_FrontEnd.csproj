@@ -289,6 +289,9 @@
     <Content Include="Connected Services\GroupServiceReference\Group_MaskInc_FrontEnd.GroupServiceReference.User_Table.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\GroupServiceReference\Group_MaskInc_FrontEnd.GroupServiceReference.Delivery1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\GroupServiceReference\Group_Service.disco" />
     <None Include="Connected Services\GroupServiceReference\configuration91.svcinfo" />
     <None Include="Connected Services\GroupServiceReference\configuration.svcinfo" />
